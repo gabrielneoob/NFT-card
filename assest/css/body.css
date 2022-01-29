@@ -48,6 +48,7 @@ body {
   right: 110px;
   bottom: 120px;
   z-index: 4;
+  cursor: pointer;
 }
 
 #nft-img img {
