@@ -15,16 +15,56 @@ body {
   padding: 25px;
   display: grid;
   gap: 18.5px;
+  transition: transform 0.5s;
+}
+
+#nft-card:hover {
+  transform: scale(1.08);
+}
+
+#nft-img {
+  position: relative;
+}
+
+#nft-img:hover::after {
+  content: "";
+  position: absolute;
+  background: rgba(0, 255, 247, 0.5);
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 2;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#nft-img:hover::before {
+  content: "";
+  position: absolute;
+  background: url(../images/icon-view.svg) center no-repeat;
+  height: 32px;
+  width: 50px;
+  right: 110px;
+  bottom: 120px;
+  z-index: 4;
 }
 
 #nft-img img {
   border-radius: 10px;
+  height: 100%;
 }
 
-h1 {
+h1 a {
   color: var(--white);
   font-size: 1.05rem;
   letter-spacing: 1.1px;
+  transition: color 0.5s;
+  display: block;
+}
+
+h1 a:hover {
+  color: var(--cyan);
 }
 
 p {
@@ -99,4 +139,9 @@ span {
 
 span a {
   color: var(--white);
+  transition: color 0.5s;
+}
+
+span a:hover {
+  color: var(--cyan);
 }
