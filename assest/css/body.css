@@ -1,0 +1,8 @@
+body {
+  background: var(--main-bg);
+  height: 100vh;
+}
+
+#nft-card {
+  display: grid;
+}
